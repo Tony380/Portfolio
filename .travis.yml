@@ -6,4 +6,6 @@ install: pip install -r requirements.txt
 
 services: sqlite3
 
+env: DJANGO_SETTINGS_MODULE=portfolio.settings
+
 script: python manage.py test
