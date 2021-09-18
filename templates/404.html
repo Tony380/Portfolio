@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>My portfolio</title>
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/img/portfolio.png' %}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <p class="navbar-brand js-scroll-trigger">PORTFOLIO</p>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-heading">La page que vous recherchez n'existe pas.</div>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{% url 'main:index' %}">Revenir à la page principale</a>
+            </div>
+        </header>
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row">
+                    <strong class="col-lg-12">Mentions légales</strong>
+                    <div class="col-lg-12">Favicon : Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                    <div class="col-lg-12">Bootstrap Theme : Agency</div>
+                    <br><br>
+                    <div class="col-lg-12">Copyright © Portfolio - Tony Gonzalez - 2021</div>
+                </div>
+            </div>
+        </footer>
