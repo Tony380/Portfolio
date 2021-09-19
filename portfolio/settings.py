@@ -25,6 +25,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 MIDDLEWARE = [
@@ -70,7 +71,7 @@ DATABASES = {
 
 if os.environ.get('ENV') == 'PRODUCTION':
     DEBUG = False
-    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 else:
     DEBUG = True
     STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
